@@ -1,3 +1,5 @@
+import Graphs from '../Graphs/Graphs';
+
 function HomePage() {
   return (
     <main className="center" id="main" role="main">
@@ -34,20 +36,7 @@ function HomePage() {
                 </p>
             </article>
 
-            <div className="charts">
-                <article>
-                    <h2>Budget Chart</h2>
-                    <p>
-                        <canvas id="myChart" width="400" height="400"></canvas>
-                    </p>
-                </article>
-
-                <article id="d3js">
-                    <h2>D3JS Chart</h2>
-                    <div id="d3chart"></div>
-                </article>
-            </div>
-
+            <Graphs />
         </div>
 
     </main>
